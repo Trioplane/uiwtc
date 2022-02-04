@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, arial, sans-serif, monospace;
+  color: white;
+}
+
+::selection {
+  background-color: rgb(255, 64, 64);
+}
+
+::-moz-selection {
+  background-color: rgb(255, 64, 64);
+}
+
+::-webkit-selection {
+  background-color: rgb(255, 64, 64);
+}
+
+body {
+  background-color: rgb(13, 12, 34);
+  background-image: url(background.png);
+  background-repeat: repeat;
+}
+
+#textWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 7%;
+}
+
+img#headerLogo {
+  max-width: 80%;
+  height: auto;
+}
+
+.download-container {
+  margin-top: 2.5%;
+}
+
+a.download-direct,
+a.download-other {
+  background: transparent;
+  padding: 20px;
+  margin: 10px;
+  text-decoration: none;
+  color: rgb(198, 246, 255);
+  border-radius: 999px;
+  outline: 5px solid tomato;
+  transition: all 0.5s;
+}
+
+a.download-direct:hover,
+a.download-mcpedl:hover,
+a.download-other:hover {
+  background-color: tomato;
+  border-radius: 5px;
+}
+
+a.download-mcpedl {
+  background: transparent;
+  padding: 5px;
+  margin: 3%;
+  text-decoration: none;
+  color: rgb(198, 246, 255);
+  border-radius: 999px;
+  outline: 5px solid tomato;
+  transition: all 0.3s;
+}
+
+#logoText {
+  font-size: x-large;
+}
