@@ -26,7 +26,7 @@ body {
   background-color: rgb(13, 12, 34);
   background-image: url(background.png);
   background-repeat: repeat;
-  /* make the background image cover the entire page github copilot is good :) */
+  /* make the background image cover the entire page github copilot is good :) .*/
   background-size: cover;
   /* make the background image fixed */
   background-attachment: fixed;
