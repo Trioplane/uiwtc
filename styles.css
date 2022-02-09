@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap");
+@import url("Mojang-Regular.ttf");
 
 *,
 *::before,
@@ -6,8 +6,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Montserrat, arial, sans-serif, monospace;
-  color: white;
+  font-family: Mojang, arial, sans-serif, monospace;
+  color: rgb(8, 8, 46);
 }
 
 ::selection {
@@ -31,6 +31,10 @@ body {
   background-attachment: fixed;
   /* make the background image scroll with the page */
   background-position: center;
+  /* make  everything centered*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #textWrapper {
@@ -38,12 +42,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 7%;
-  background-color: rgba(1, 1, 1, 0.3);
 }
 
 img#headerLogo {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -52,15 +54,22 @@ img#headerLogo {
 }
 
 a.download-direct,
-a.download-other {
-  background: transparent;
+a.download-other,
+a.download-mcpedl {
+  background: rgba(255, 99, 71, 0.329);
   padding: 20px;
-  margin: 10px;
   text-decoration: none;
   color: rgb(198, 246, 255);
   border-radius: 999px;
   outline: 5px solid tomato;
   transition: all 0.5s;
+  display: flex;
+  /*  make ithe direction column and add 3 pixels of gap*/
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4%;
+  font-size: 1.7rem;
 }
 
 a.download-direct:hover,
@@ -70,7 +79,7 @@ a.download-other:hover {
   border-radius: 5px;
 }
 
-a.download-mcpedl {
+/* a.download-mcpedl {
   background: transparent;
   padding: 5px;
   margin: 3%;
@@ -79,8 +88,23 @@ a.download-mcpedl {
   border-radius: 999px;
   outline: 5px solid tomato;
   transition: all 0.3s;
-}
+} */
 
 #logoText {
-  font-size: x-large;
+  font-size: 2rem;
+}
+
+::-webkit-scrollbar {
+  width: 3.5px;
+  height: 3.5px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: tomato;
+}
+
+::-webkit-scrollbar-button {
+  background: tomato;
+  border-radius: 99px;
 }
