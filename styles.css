@@ -1,4 +1,8 @@
-@import url("Mojang-Regular.ttf");
+@font-face {
+  font-family: Mojang;
+  src: url(Mojang-Regular.ttf) format("truetype") url(Mojang-Bold.ttf)
+    format("truetype");
+}
 
 *,
 *::before,
@@ -7,7 +11,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Mojang, arial, sans-serif, monospace;
-  color: rgb(8, 8, 46);
 }
 
 ::selection {
@@ -35,6 +38,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  margin-top: 3px;
 }
 
 #textWrapper {
@@ -92,6 +97,8 @@ a.download-other:hover {
 
 #logoText {
   font-size: 2rem;
+  padding-top: 1%;
+  color: rgb(8, 8, 46);
 }
 
 ::-webkit-scrollbar {
@@ -107,4 +114,64 @@ a.download-other:hover {
 ::-webkit-scrollbar-button {
   background: tomato;
   border-radius: 99px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background-color: rgb(13, 12, 34);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  color: rgb(209, 249, 255);
+  transition: all 0.5s;
+  overflow-y: hidden;
+}
+
+#footer::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3%;
+  background-color: rgb(56, 135, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: rgb(209, 249, 255);
+  transition: all 2s ease-out;
+}
+
+#footer > p > a:nth-child(1) {
+  color: rgb(149, 17, 167);
+  text-decoration: none;
+  transition: all 0.3s;
+  outline: 0.3px solid rgb(56, 135, 255);
+  border-radius: 2px;
+  padding: 10px;
+}
+
+#footer > p > a:hover:nth-child(1) {
+  text-decoration: underline;
+  background-color: rgb(56, 135, 255);
+  color: rgb(8, 8, 46);
+  padding: 5px;
+}
+
+#footer:hover {
+  height: 15%;
+}
+
+#footer::before:hover {
+  height: 10%;
+}
+
+#footerMarkGithub {
+  width: 6%;
+  height: auto;
 }
