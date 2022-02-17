@@ -1,13 +1,13 @@
 @font-face {
   font-family: Mojang;
-  src: url(/fonts/Mojang-Regular.woff2) format("woff2"),
-    url(/fonts/Mojang-Regular.woff) format("woff");
+  src: url(fonts/Mojang-Regular.woff2) format("woff2"),
+    url(fonts/Mojang-Regular.woff) format("woff");
 }
 
 @font-face {
   font-family: Mojang-Bold;
-  src: url(/fonts/Mojang-Bold.woff2) format("woff2"),
-    url(/fonts/Mojang-Bold.woff) format("woff");
+  src: url(fonts/Mojang-Bold.woff2) format("woff2"),
+    url(fonts/Mojang-Bold.woff) format("woff");
 }
 
 .bold {
@@ -37,7 +37,7 @@
 
 body {
   background-color: rgb(13, 12, 34);
-  background-image: url(/imgs/background.png);
+  background-image: url(imgs/background.png);
   /* make the background image cover the entire page github copilot is good :) */
   background-size: cover;
   /* make the background image fixed */
