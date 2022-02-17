@@ -37,7 +37,7 @@
 
 body {
   background-color: rgb(13, 12, 34);
-  background-image: url(imgs/background.png);
+  background-image: url(/imgs/background.png);
   /* make the background image cover the entire page github copilot is good :) */
   background-size: cover;
   /* make the background image fixed */
